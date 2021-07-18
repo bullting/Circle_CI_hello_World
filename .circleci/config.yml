@@ -18,6 +18,8 @@ jobs:
     steps:
       - run: echo world
 
+      - run: echo $My_Env_Name
+
 workflows:
   # Name the workflow "welcome"
   welcome:
@@ -28,3 +30,4 @@ workflows:
       - print_world:
           requires:
             - print_hello
+      
